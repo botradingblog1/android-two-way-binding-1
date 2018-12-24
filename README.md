@@ -1,2 +1,2 @@
 # android-two-way-binding-1
-Tutorial for Android two-way binding
+A sample app on how to implement Android two-way binding
