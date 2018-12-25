@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Two Way Binding Sample App</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_employee_list">EmployeeListActivity</string>
+
+    <!-- Employee List -->
+    <string name="employee_detail_employee_id">Employee ID:</string>
+    <string name="employee_detail_first_name">First Name:</string>
+    <string name="employee_detail_last_name">Last Name:</string>
+    <string name="employee_detail_business_name">Business Name:</string>
+</resources>
