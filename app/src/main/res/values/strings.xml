@@ -4,8 +4,15 @@
     <string name="title_activity_employee_list">EmployeeListActivity</string>
 
     <!-- Employee List -->
+    <string name="employee_list">Employee List</string>
+    <string name="employee_list_select_employee">Select an employee from the list below to update</string>
+    <string name="employee_list_loading_employee">Update first-, last- or business name of \'%1$s\'. Then press \'Save\'.</string>
+    <string name="employee_list_listview_updated">Employee list updated</string>
+
+    <!-- Employee Detail -->
     <string name="employee_detail_employee_id">Employee ID:</string>
     <string name="employee_detail_first_name">First Name:</string>
     <string name="employee_detail_last_name">Last Name:</string>
     <string name="employee_detail_business_name">Business Name:</string>
+    <string name="employee_detail_button_save">Save</string>
 </resources>

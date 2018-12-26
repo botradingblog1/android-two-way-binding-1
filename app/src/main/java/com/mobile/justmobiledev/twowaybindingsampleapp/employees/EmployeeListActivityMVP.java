@@ -1,5 +1,11 @@
 package com.mobile.justmobiledev.twowaybindingsampleapp.employees;
 
+import com.mobile.justmobiledev.twowaybindingsampleapp.models.employee.Employee;
+
+import java.util.ArrayList;
+
 public interface EmployeeListActivityMVP {
-    void showProgress(boolean show);
+    void updateEmployeeList(final ArrayList<Employee> employeeList);
+    void showInfo(final String message);
+    void hideKeyboard();
 }

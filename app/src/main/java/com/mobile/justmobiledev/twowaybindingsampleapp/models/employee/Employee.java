@@ -27,4 +27,8 @@ public class Employee extends Person {
     public String getBusinessName(){
         return businessName;
     }
+
+    public String getFullName(){
+        return firstName + " "+ getLastName();
+    }
 }

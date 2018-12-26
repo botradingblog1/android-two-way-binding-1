@@ -1,43 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".employees.EmployeeDetailFragment">
 
+    <data>
+        <variable name="vm" type="com.mobile.justmobiledev.twowaybindingsampleapp.employees.EmployeeDetailViewModel" />
+    </data>
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/employee_detail_employee_id" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="employee id" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/employee_detail_first_name" />
+            android:text="@string/employee_detail_first_name"
+            android:textSize="12sp"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="12sp"
+            android:text="@={vm.employee.firstName}"
+        />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/employee_detail_last_name" />
+            android:layout_height="wrap_content"
+            android:text="@string/employee_detail_last_name"
+            android:textSize="12sp"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="@={vm.employee.lastName}"
+            android:textSize="12sp"
+           />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/employee_detail_business_name" />
+            android:layout_height="wrap_content"
+            android:text="@string/employee_detail_business_name"
+            android:textSize="12sp"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="@={vm.employee.businessName}"
+            android:textSize="12sp"
+            />
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="@{() -> vm.onSaveButtonClick()}"
+            android:text="@string/employee_detail_button_save"
+            android:textSize="12sp"/>
     </LinearLayout>
-
-</FrameLayout>
+</layout>

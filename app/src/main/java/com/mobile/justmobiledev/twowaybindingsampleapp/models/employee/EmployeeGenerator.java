@@ -5,19 +5,25 @@ import com.mobile.justmobiledev.twowaybindingsampleapp.models.base.PersonTypeEnu
 import com.mobile.justmobiledev.twowaybindingsampleapp.models.employee.Employee;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.inject.Inject;
 
 public class EmployeeGenerator {
 
-    public static ArrayList<Employee> generateEmployees(int numEmployees){
+    @Inject
+    public EmployeeGenerator(){ }
 
-        ArrayList<Employee> employeeList = new ArrayList<>();
+    public static Map<String, Employee> generateEmployees(int numEmployees){
+
+        Map<String, Employee> employeeMap = new HashMap<>();
         for (int i=0; i < numEmployees; i++){
             PersonFactory factory = new PersonFactory();
             Employee employee = (Employee)factory.createPerson(PersonTypeEnum.EMPLOYEE);
-            employeeList.add(employee);
+            employeeMap.put(employee.getEmployeeId(), employee);
         }
 
-        return employeeList;
+        return employeeMap;
     }
-
 }

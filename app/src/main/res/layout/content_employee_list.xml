@@ -1,9 +1,43 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment"
-    android:name="com.mobile.justmobiledev.twowaybindingsampleapp.employees.EmployeeListFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:layout="@layout/fragment_employee_list" />
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:baselineAligned="false">
+
+    <TextView
+        android:id="@+id/textview_info_output"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:textColor="#226df0"
+        android:textSize="12sp"/>
+
+    <fragment
+        android:id="@+id/fragment_employee_detail"
+        android:layout_marginTop="@dimen/vertical_control_margin"
+        android:name="com.mobile.justmobiledev.twowaybindingsampleapp.employees.EmployeeDetailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_employee_detail" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/vertical_control_margin"
+        android:background="@android:color/darker_gray"/>
+
+    <fragment
+        android:id="@+id/fragment_employee_list"
+        android:name="com.mobile.justmobiledev.twowaybindingsampleapp.employees.EmployeeListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_control_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout="@layout/fragment_employee_list" />
+
+</LinearLayout>
