@@ -6,7 +6,7 @@
     <!-- Employee List -->
     <string name="employee_list">Employee List</string>
     <string name="employee_list_select_employee">Select an employee from the list below to update</string>
-    <string name="employee_list_loading_employee">Update first-, last- or business name of \'%1$s\'. Then press \'Save\'.</string>
+    <string name="employee_list_loading_employee">Update properties of \'%1$s\'. Then press \'Save\'.</string>
     <string name="employee_list_listview_updated">Employee list updated</string>
 
     <!-- Employee Detail -->
