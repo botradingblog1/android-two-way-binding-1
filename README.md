@@ -6,4 +6,6 @@ It uses the standard Android data binding library, not a third party library lik
 This project can be used in combination with my blog tutorial on Android two-way data binding
 [here](https://www.google.com)
 
-A sample app on how to implement Android two-way binding
+
+## Screenshots
+![Phone Main Menu](screenshots/data_binding_ss_1.png?raw=true "Data Binding Screenshot")
