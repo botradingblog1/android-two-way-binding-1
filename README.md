@@ -3,7 +3,7 @@
 The purpose or this project is to demonstrate how Android two-way data binding can be implemented using standard Android SDK functionality.
 It uses the Android data binding library, not a third party library like 'ButterKnife'.
 
-The project was intended for my blog tutorial on Android two-way data binding [here](http://justmobiledev.com/android-two-way-binding-with-viewmodels/).
+The project was intended for my [blog post on Android two-way data binding](http://justmobiledev.com/android-two-way-binding-with-viewmodels/).
 
 The Android documentation on [two-way data binding](https://developer.android.com/topic/libraries/data-binding/two-way) and [ViewModels](https://developer.android.com/topic/libraries/architecture/viewmodel) is a good read to better understand the project.
 
