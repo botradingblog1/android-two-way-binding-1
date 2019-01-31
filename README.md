@@ -1,13 +1,11 @@
 # Tutorial app for Android Two-Way Binding
 ## Overview
-This is an Android Java app with the purpose to demonstrate how Android two-way data binding can be implemented.
-It uses the standard Android data binding library, not a third party library like 'ButterKnife'.
+The purpose or this project is to demonstrate how Android two-way data binding can be implemented using standard Android SDK functionality.
+It uses the Android data binding library, not a third party library like 'ButterKnife'.
+
+The project was intended for my blog tutorial on Android two-way data binding [here](http://justmobiledev.com/android-two-way-binding-with-viewmodels/).
 
 The Android documentation on [two-way data binding](https://developer.android.com/topic/libraries/data-binding/two-way) and [ViewModels](https://developer.android.com/topic/libraries/architecture/viewmodel) is a good read to better understand the project.
-
-## Tutorial
-This project can be used in combination with my blog tutorial on Android two-way data binding
-[here](http://justmobiledev.com/android-two-way-binding-with-viewmodels/).
 
 ## Implementation
 * The app uses Android data binding, which is enabled in the app build.gradle.
